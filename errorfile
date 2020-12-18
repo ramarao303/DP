@@ -1,0 +1,9 @@
+TypeError: blog_home() takes 0 positional arguments but 1 was given
+def blog_home():
+    return HttpResponse("Blog Home Page")
+
+
+Ans:
+
+def blog_home(request):
+    return HttpResponse("Blog Home Page")

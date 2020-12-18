@@ -30,3 +30,13 @@ python manage.py startapp portfolio
 doskey /h > cmds
 dir
 doskey /h > cmds.txt
+ \activate
+activate
+cd ..
+cls
+python manage.py makemigrations 
+python manage.py migrate
+python manage.py createsuperuser
+doskey /h > comnds1.txt
+dir
+doskey /h >> cmds.txt

@@ -1,0 +1,36 @@
+{% extends "blog/base.html" %}
+
+{% block title %}
+
+Welcome
+
+{% endblock %}
+{% block content %}
+
+<div class="jumbotron">
+      <div class="container">
+        <h2>Welcome To MyBlog - I'm Sure you will Love it!</h2>
+        <p>This is a Blog Home Page. It includes a three supporting pieces of content. You can learn Python from Zero to Hero and post your questions?.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Technologies</h2>
+          <p><a class="btn btn-default" href="{% url 'technlogies' %}" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2>Personal</h2>
+          <p><a class="btn btn-default" href="{% url 'personal' %}" role="button">View details &raquo;</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2>Public</h2>
+          <p><a class="btn btn-default" href="{% url 'public' %}" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+        {% endblock %}
