@@ -1,0 +1,32 @@
+cd ..
+cd users
+cd rama
+cd pycharmprojects
+mkdir DjangoProjects
+mkdir DP
+cd DP
+virtula .env
+virtulenv .env
+virtualenv .env
+ cd .env
+cd scripts
+ \activate
+ /activate
+  activate
+cd ..
+cls
+pip install --upgrade pip
+pip install django
+pip freeze > requirements.txt 
+dir
+django-admin startproject MyProject .
+dir
+cd MyProject
+dir
+cd ..
+python manage.py startapp blog
+python manage.py startapp users
+python manage.py startapp portfolio
+doskey /h > cmds
+dir
+doskey /h > cmds.txt
