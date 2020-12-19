@@ -10,8 +10,14 @@ def blog_list(request):
     return render(request, "blog/index.html", {'blog_list': post})
 
 def technlogies(request):
+    context = {
+
+        'posts': Post.objects.all()
+
+    }
+
     return render(request,'blog/Technlogies.html',context)
-posts = [
+'''posts = [
 
 {
   'author' : 'Loonycorn',
@@ -34,12 +40,7 @@ context = {
   'posts' : posts
 
   }
-
-context = {
-
-  'posts' : posts
-
-  }
+'''
 def personal(request):
     return render(request,'blog/personal.html')
 
