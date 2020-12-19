@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from . import views
+from users import views as user_views
 
 urlpatterns = [
     path('', views.blog_home,name='blog_home'),
@@ -24,5 +25,6 @@ urlpatterns = [
     path('technlogies',views.technlogies,name='technlogies'),
     path('personal',views.personal,name='personal'),
     path('public',views.public,name='public'),
+    path('register/',user_views.register,name='register')
 
    ]
